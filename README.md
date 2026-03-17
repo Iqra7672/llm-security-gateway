@@ -22,14 +22,13 @@ Protecting LLMs from Prompt Injection, Jailbreak Attempts, and PII Leakage
 
 - Project Overview  
 - Key Features  
-- Architecture  
+- Architecture
+- Data Flow  
 - Requirements Matrix  
 - Installation  
 - Configuration  
 - Test Results  
-- Project Structure  
-- Security Coverage  
-- Performance Metrics  
+- Project Structure    
 - License  
 - Contact  
 
@@ -132,12 +131,14 @@ python -m spacy download en_core_web_lg
 
 python test_gateway.py
 
-📦 Dependencies
+
+## 📦 Dependencies
+
 presidio-analyzer==2.2.33
 spacy==3.7.4
 pyyaml==6.0.1
 
-⚙️ Configuration
+## ⚙️ Configuration
 
 Edit config/config.yaml
 
@@ -172,7 +173,10 @@ pii:
 | 🆔 Internal ID           | 0.00            | 1 entity    | 🟡 MASK    | 0.20      |
 | 📞 Phone number          | 0.00            | 1 entity    | 🟡 MASK    | 0.16      |
 
+---
+
 ## 📁 Project Structure
+
 
 llm-security-gateway/
 ├── gateway/
@@ -195,6 +199,9 @@ llm-security-gateway/
 ├── requirements.txt
 └── README.md
 
+
+---
+
 ## 📄 License
 
 © 2026 Iqra Mushtaq  
@@ -207,3 +214,6 @@ Bahria University
 - Email: 01-134241-018@student.bahria.edu.pk  
 - GitHub: https://github.com/Iqra7672  
 - Institution: Bahria University, Islamabad  
+
+  
+
