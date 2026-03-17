@@ -138,6 +138,8 @@ presidio-analyzer==2.2.33
 spacy==3.7.4
 pyyaml==6.0.1
 
+---
+
 ## ⚙️ Configuration
 
 Edit config/config.yaml
@@ -161,6 +163,8 @@ pii:
     - "API_KEY"
     - "INTERNAL_ID"
   min_confidence: 0.6
+
+---
 
 ## 📊 Test Results (from actual execution)
 
