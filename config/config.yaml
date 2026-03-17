@@ -1,0 +1,25 @@
+# config/config.yaml
+injection:
+  threshold: 0.5
+  patterns:
+    instruction_override: 0.4
+    system_extraction: 0.3
+    jailbreak: 0.5
+    special_chars: 0.2
+
+presidio:
+  entities:
+    - PHONE_NUMBER
+    - API_KEY
+    - INTERNAL_ID
+    - EMAIL_ADDRESS
+  min_score: 0.6
+
+policy:
+  block_threshold: 0.7
+  mask_threshold: 0.4
+  mask_entities:
+    - PHONE_NUMBER
+    - EMAIL_ADDRESS
+  block_entities:
+    - API_KEY
