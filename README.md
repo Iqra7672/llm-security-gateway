@@ -168,19 +168,18 @@ pii:
 
 ## 📊 Test Results (from actual execution)
 
-| Input Type                  | Injection Score | PII Found   | Decision   | Time (ms) |
-|---------------------------|-----------------|-------------|------------|-----------|
-| ✅ Normal query           | 0.00            | None        | 🟢 ALLOW   | 0.12      |
-| ⚠️ "Ignore instructions" | 0.10            | None        | 🟢 ALLOW   | 0.20      |
-| 📧 Email + Phone         | 0.00            | 2 entities  | 🟡 MASK    | 0.23      |
-| 🔑 API Key               | 0.00            | 1 entity    | 🔴 BLOCK   | 0.52      |
-| 🆔 Internal ID           | 0.00            | 1 entity    | 🟡 MASK    | 0.20      |
-| 📞 Phone number          | 0.00            | 1 entity    | 🟡 MASK    | 0.16      |
+| # | Input Type               | Injection Score | PII Found  | Decision   | Time (ms) |
+|---|--------------------------|-----------------|------------|------------|-----------|
+| 1 | Normal Query            | 0.00            | None       | 🟢 ALLOW   | 0.12      |
+| 2 | Ignore Instructions     | 0.10            | None       | 🟢 ALLOW   | 0.20      |
+| 3 | Email + Phone           | 0.00            | 2 entities | 🟡 MASK    | 0.23      |
+| 4 | API Key                 | 0.00            | 1 entity   | 🔴 BLOCK   | 0.52      |
+| 5 | Internal ID             | 0.00            | 1 entity   | 🟡 MASK    | 0.20      |
+| 6 | Phone Number            | 0.00            | 1 entity   | 🟡 MASK    | 0.16      |
 
 ---
 
 ## 📁 Project Structure
-
 
 llm-security-gateway/
 ├── gateway/
@@ -202,7 +201,6 @@ llm-security-gateway/
 ├── test_gateway.py # Test script
 ├── requirements.txt
 └── README.md
-
 
 ---
 
